@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+{% for board in boardobject %}
+<p>ㅡㅡㅡㅡㅡㅡㅡ</p>
+<p>제목 : {{ board.title }}</p>
+<p>글 유형 : {{ board.content_type }}</p>
+<p>글 내용 : {{ board.content }}</p>
+<p>글쓴 날짜 : {{ board.write_date }}</p>
+<p>ㅡㅡㅡㅡㅡㅡㅡ</p>
+{% endfor %}
+</body>
+</html>
